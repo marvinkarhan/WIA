@@ -44,8 +44,18 @@ Abstract
 % Unterunterabschnitte mit \subsubsection
 \section{Einleitung}
 "“Dark pattern” means a user interface designed or manipulated with the substantial effect of subverting or impairing user autonomy, decisionmaking, or choice"
-\\// beschreiben was Dark Patterns sind
-\\// sagen das sich diese Arbeit auf Webseiten bezeichnet
+
+Mit der immer stärker zunehmender Digitalisierung und der steigenden Anzahl an Internet Nutzern \autocite{ITU2020}, wird der Einfluss von Applikationen im Internet und ihrem Design immer größer. Für ihre Nutzer ist es nicht immer klar, wenn sie ausgenutzt worden. Menschen sind besonders gut in der Erkennung von Mustern, wir nutzen die muster verschiedener Laute Sprache verstehen und sprechen zu können. Deshalb ist es wichtig zu verstehen welche Muster im Internet eingesetzt werden, um uns zu beeinflussen.
+
+Viele Gelehrt befassen sich damit Richtlinien und Vorlagen für gutes Interface Design zu verfassen. Dieses Paper beleuchtet die dunkle Seite des Interface Designs im Webumfeld. Von besonderer Bedeutung ist dabei der Einfluss von \textit{Dark Patterns} auf Nutzer. Sie sind Negativbeispiele für Interface Design und dienen nicht dem wohle der Nutzer. Harry Brignull gilt als der Begründer des Dark Pattern Begriffs und definiert ihn als Tricks die Nutzer dazu überzeugen etwas zu tun, was sie ursprünglich nicht tun wollten \autocite{Brignull}. Sie nutzen Psychologische Mechanismen, um die Entscheidungsfindung des Nutzers wesentlich zu beeinflussen.
+
+Das Ziel dabei ist zweiseitig, einerseits soll es Designern leichter fallen Dark Patterns in ihren Designendscheidungen zu vermeiden und anderseits sollen Nutzer leichter in der Lage sein Dark Patterns zu erkennen, um so negative Konsequenzen zu verhindern. 
+
+% Umfang und Abgrenzung 
+Diese Arbeit bietet einen Einblick in die Konzepte, die das Fundament für Dark Patterns bilden und welche rolle dabei psychologische Mechanismen einnehmen. Außerdem werden Beispiele von Dark Patterns in die von \citeauthor{Gray_2018} etablierte Taxonomie eingeordnet und bewertet. Zudem werden Legislative Maßnahmen gegen Dark Patterns betrachtet und beantwortet die Frage, wieso die Aufklärung von Designern und Nutzern nötig ist.
+% Dieses Paper vermittelt einen Einblick in die Konzepte, die das Fundament für die Definition des Dark Pattern Begriffes liefern. Wie sich Dark Patterns in Applikationen manifestieren und wie Verbraucher vor Missbrauch durch Dark Patterns geschützt werden, bzw. wie können sich Nutzer davor schützen. Außerdem wird im Ausblick darauf eingegangen wie Regularien oder Nutzerverhalten den Einsatz von Dark Patterns in Zukunft beeinflussen kann.
+
+% Format und Struktur (irgendwie schon im vorherigen absatz geklärt..?)
 
 % \section{Zusätzliche Angaben}
 % \subsection{Zentrale Begriffe}
@@ -95,7 +105,7 @@ Abstract
 % // wer setzt das warum ein\\
 //Neuer Einstieg\\
 
-Traditionell nutzen Firmen Plakate und Anzeigen um Kunden auf sich aufmerksam zu machen. Durch die Entstehung des Internets verbreitete sich das sogenannte \textit{Growth Hacking}. Mit Growth Hacking werden Marketing Aktionen bezeichnet, welche Tricks ausnutzen, um Wachstum zu steigern. Growth Hacks bewegen sich häufig an der Grenze zum illegalem  \autocite{Narayanan2020}. LinkedIn gab seinen Nutzern die Möglichkeit automatisiert persönliche Kontakte per E-Mail zu LinkedIn einzuladen. Sie nutzten diese Einwilligung, um wiederholt E-Mails im Namen der Nutzer an deren Kontakte zu senden. Daraus resultiere eine Sammelklage, da es für die Nutzer nicht klar war das LinkedIn die Kontakte im Namen des Nutzers mit werbe Mails spammen würde \autocite{Strange2015}. Solche Marketing Aktionen sind die Basis von Dark Patterns. 
+Traditionell nutzen Firmen Plakate und Anzeigen um Kunden auf sich aufmerksam zu machen. Durch die Entstehung des Internets verbreitete sich das sogenannte \textit{Growth Hacking}. Mit Growth Hacking werden Marketing Aktionen bezeichnet, welche Tricks ausnutzen, um Wachstum zu steigern. Growth Hacks bewegen sich häufig an der Grenze zum illegalem  \autocite{Narayanan2020}. LinkedIn gab seinen Nutzern die Möglichkeit automatisiert persönliche Kontakte per E-Mail zu LinkedIn einzuladen. Sie nutzten diese Einwilligung, um wiederholt E-Mails im Namen der Nutzer an deren Kontakte zu senden. Daraus resultiere eine Sammelklage, da es für die Nutzer nicht klar war das LinkedIn die Kontakte im Namen des Nutzers mit werbe Mails spammen würde \autocite{Strange2015}. Solche Marketing Aktionen sind der Urstprung von Dark Patterns. 
 
 Dieses Kapitel ordnet Dark Patterns ein, beschreibt wie die menschliche Psyche ausgenutzt werden kann, was \textit{Nudging} ist und anhand eines Beispiels wie \textit{Nudges} eingesetzt werden können.
 \subsection{Anti-Pattern}
@@ -143,36 +153,46 @@ Um \textit{Nudging} besser zu verstehen, betrachten wir ein Dark Pattern, welche
 Zusammenfassend lässt sich sagen, dass Dark Patterns als Zusammenschluss verschiedener Nudges verstanden werden kann.
 
 \section{Kategorien von Dark Patterns}
-//Bilder aus Kapitel 3. Nudging (HSMA) einordnen + zweites Dark Pattern (confirm shaming) direkt über \autoref{fig:HSMAOptOut}\\
+//Bilder aus Kapitel 3. Nudging (HSMA) einordnen + zweites Dark Pattern (confirm shaming) direkt über
+\autoref{fig:HSMAOptOut}\\
 // Taxonomy mit verschiedenen Quellen belegen \autocite*{Gray_2018,M.Bhoot2020,Brignull}
+
+
 \subsection{Nagging}
 // Nerven bis man ja sagt (Z.B. iPhone Apple Pay-Einrichtung or No Button for No)
-\subsection{Behindernd}
-// Roach motel, easy to enter hard to leave
-\subsection{Irreführend}
-\label{chap:Irreführend}
+\subsection{Obstruction}
+\label{chap:Obstruction}
 // Verbergen von Information durch Design, z.B. wenn ein Shop immer direkt die teuerste Variante (farblich) eines Produkts zeigt
-\subsection{Heimlich}
+\\// Roach motel, easy to enter hard to leave
+\subsection{Sneaking}
 // Versteckte Kosten, sneak into basket, versteckte Subscriptions, z.B. hinter einem free trial
-\subsection{Zwingend}
+\subsection{Interface Interference}
+// Manipulation of the user interface that privileges certain actions over others.
+\subsection{Forced action}
 // Wenn man gezwungen wird, etwas zu tun, was man nicht will und was nicht erforderlich ist, z.B. Annehmen eines Newsletters zur Anmeldung oder das Liken einer Seite, um sie zu besuchen
 
 
 \section{Schutz vor Dark Patterns}
-// hier fehlt noch etwas zum Gesetz und Desigern.\\
+// hier fehlt noch etwas zum Gesetz und Designern.\\
 Nutzer lesen nicht jedes Wort auf einer Webseite, sie überfliegen und machen Annahmen \autocite{Brignull}. Firmen können das ausnutzen, indem sie die Seite anders aussehen lassen, als was sie tatsächlich aussagt \autocite{Brignull}.
 
 Designer müssen viele Entscheidungen bei dem Designen einer Webseite treffen. Im digitalen Umfeld wird dafür häufig A/B-Testing eingesetzt, da so Annahmen mit Nutzerdaten untermauert werden können. Das führt häufig dazu, dass Designer unbewusst und ohne eine böse Absicht Dark Patterns in die Webseite einbinden \autocite{Narayanan2020}.
 
 \subsection{Gesetzliche Einschränkungen}
 // Self-regulate or get regulated
-\subsection{Entwickler-Aufklärung}
+\\// genauer Gesetzes Auszug aus dem (CCPA) \begin{quotation}Cal. Civ. Code § 1798.140(l)\end{quotation}
+\subsection{Designer-Aufklärung}
 // Entwickler entwickeln oft Dark Patterns ohne dass ihnen das bewusst ist
 \subsection{Nutzer-Aufklärung}
 // subreddit '/r/assholedesign' \autocite{Chivukula_2019}\\
 // Brignull klärt auf seiner Seite auf \autocite{Brignull}
 // Nutzer aufklären, führt zur Reduzierung des Erfolges von Dark Patterns, was wiederum dafür sorgt, dass Dark Patterns sich für Firmen weniger lohnen und sie auf diese verzichten\\
-Laut \citeauthor{Brignull} \autocite{Brignull} ist der beste Schutz vor Dark Patterns, sie sich bewusst zu machen und die Firmen, die sie benutzen zu boykottieren. \autoref{chap:Psychologie} zeigt, dass der Mensch anfällig für Dark Patterns ist. \citeauthor{M.Bhoot2020} \autocite{M.Bhoot2020} fanden in einer Nutzerbefragung heraus, dass Nutzer Dark Patterns mit stark schwankender Konsistenz erkennen. Nur 18,6\% der Befragten haben das Roach Motel Dark Pattern erkannt. Deshalb ist es wichtig, Nutzer über die Dark Patterns aufzuklären, sodass sie diese leichter erkennen, um sich selbst vor ungewollten Konsequenzen zu schützen.
+Laut \citeauthor{Brignull} \autocite{Brignull} ist der beste Schutz vor Dark Patterns, sie sich bewusst zu machen und die Firmen, die sie benutzen zu boykottieren. \autoref{chap:Psychologie} zeigt, dass der Mensch anfällig für Dark Patterns sein kann. 41.4\% der Befragten einer Studie von \citeauthor{M.Bhoot2020} \autocite{M.Bhoot2020} gaben an noch nie von einer Webseite ausgetrickst worden zu sein, jedoch hat keiner der Befragten alle zwölf Dark Pattern der Studie identifizieren können. \citeauthor{M.Bhoot2020} identifizieren Auftrittshäufigkeit als wichtigsten Gesichtspunkt zur Identifikation von Dark Pattern. Deshalb ist es wichtig, Nutzer über Dark Patterns aufzuklären, sodass sie diese leichter erkennen, um sich selbst vor ungewollten Konsequenzen schützen können.
+
+Ein bedeutendstes Merkmal zur Erkennung von Dark Patterns ist die Auftrittshäufigkeit \autocite{M.Bhoot2020}. -> sub-Reddit
+
+
+In der Fußgängerzone stellen Hütchenspieler ihrem Publikum hohe Gewinnchancen in Aussicht, naive Passanten verstehen es als Geschicklichkeit spiel dessen Ausgang sie durch ihr Können bestimmen, jedoch ist das ein Irrtum. Der Hütchenspieler nutzt einfache Taschenspielertricks und kontrolliert jederzeit den Ausgang des Spiels. 
 
 \section{Fazit und Ausblick}
 

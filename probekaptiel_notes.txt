@@ -20,11 +20,11 @@
 
 notes im gespräch:
 	aktueller einstieg -> in kapitel schutz vor darkpatterns
-- quelle zu growth hacking
-- A steht für ausdruck -> anderes wort
-erzuegen probleme für den nutzer -> probleme beschreiben die er bekommt KONKRET
- -> nächster satz klarer
-- tversky & kahnemann -> genuaer verusch/problem genuer erklären
+	- quelle zu growth hacking
+	- A steht für ausdruck -> anderes wort
+	erzuegen probleme für den nutzer -> probleme beschreiben die er bekommt KONKRET
+	-> nächster satz klarer
+	- tversky & kahnemann -> genuaer verusch/problem genuer erklären
 
 - kahneman für verzerrung vs bias
  -> predicably irrational auf deutsch
